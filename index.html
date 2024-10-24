@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformers Embeddings</title>
+    <style>
+      body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      #output {
+        margin: 20px 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: #2d2d2d;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        min-height: 200px;
+      }
+      .button-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background: #4a4a4a;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #5a5a5a;
+      }
+      h3 {
+        color: #ffffff;
+        margin-top: 20px;
+      }
+      p {
+        margin: 10px 0;
+        color: #b0b0b0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="button-container">
+        <button onclick="window.runEmbeddings()">Run Embeddings</button>
+        <button onclick="window.runSpeechRecognition()">Run Speech Recognition</button>
+        <button onclick="window.runImageClassification()">Run Image Classification</button>
+        <button onclick="window.runTextGeneration()">Run Text Generation</button>
+      </div>
+      <div id="output">Click any button above to start...</div>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/speech.js"></script>
+    <script type="module" src="/classification.js"></script>
+    <script type="module" src="/qwen05.js"></script>
+  </body>
+</html>
